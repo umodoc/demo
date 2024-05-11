@@ -5,7 +5,7 @@
   "type": "module",
   "author": {
     "name": "umodoc",
-    "email": "contact@umodoc.com",
+    "email": "contact@umoteam.com",
     "url": "https://umodoc.com"
   },
   "homepage": "https://demo.umodoc.com/editor",
@@ -18,7 +18,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@umodoc/editor": "^1.0.0",
+    "@umoteam/editor": "^1.0.0-beta.5",
     "@vueuse/core": "^10.9.0",
     "tweakpane": "^4.0.3",
     "vue": "^3.4.26"
