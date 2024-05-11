@@ -1,7 +1,7 @@
 <template>
   <div class="demo-container">
     <header class="header-container">
-      <a class="logo" href="https://docs.umodoc.com">
+      <a class="logo" href="https://editor.umodoc.com/docs">
         <img src="/logo.svg" alt="Umo Editor" />
         | <span>Umo Editor 在线示例</span>
       </a>
@@ -104,6 +104,18 @@ const options = ref({
         }
       }, 2000)
     })
+  },
+  async onFileUpload(file) {
+    if (!file) throw new Error('没有找到要上传的文件')
+    console.log('onUpload', file)
+    await new Promise((resolve) => setTimeout(resolve, 3000))
+    return {
+      id: new Date().getTime().toString(),
+      url: file.url || URL.createObjectURL(file),
+      name: file.name,
+      type: file.type,
+      size: file.size,
+    }
   },
 })
 const themeVars = {
