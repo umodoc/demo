@@ -61,7 +61,7 @@
 
 <script setup>
 import { nextTick, watch, onMounted, ref } from 'vue'
-import { UmoEditor } from '@umodoc/editor'
+import { UmoEditor } from '@umoteam/editor'
 import { Pane } from 'tweakpane'
 import { useClipboard } from '@vueuse/core'
 
@@ -69,7 +69,9 @@ let defaultOptions = {}
 const editorRef = ref(null)
 const options = ref({
   editorKey: 'demo',
-  cdnUrl: 'https://cdn.umodoc.com',
+  toolbar: {
+    enableSourceEditor: true,
+  },
   document: {
     content: localStorage.getItem('umo-editor-demo-content'),
   },
@@ -85,6 +87,7 @@ const options = ref({
       content: '<p>工作周报模板</p>',
     },
   ],
+  cdnUrl: 'https://cdn.umodoc.com',
   onSave(content, page, document) {
     localStorage.setItem('umo-editor-demo-content', document.content)
     return new Promise((resolve, reject) => {
