@@ -6,4 +6,11 @@ Umo Editor 是一个基于 [Tiptap 无头编辑器](https://tiptap.dev) 的 Vue3
 
 [开发文档](https://editor.umodoc.com/docs) | [在线演示](https://demo.umodoc.com/editor) | [GitHub](https://github.com/umodoc/editor) | [码云(国内镜像)](https://gitee.com/umodoc/editor) | [NPM](https://www.npmjs.com/package/@umoteam/editor)
 
-[开发文档](https://editor.umodoc.com/docs) | [在线演示](https://demo.umodoc.com/editor) | [GitHub](https://github.com/umodoc/editor) | [NPM](https://www.npmjs.com/package/@umoteam/editor)
+## 运行本示例
+
+```bash
+git clone https://github.com/umodoc/demo.git
+cd demo
+npm install
+npm run dev
+```
