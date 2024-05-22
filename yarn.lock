@@ -195,14 +195,7 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/retry/-/retry-0.2.3.tgz#c9aa036d1afa643f1250e83150f39efb3a15a631"
   integrity sha512-X38nUbachlb01YMlvPFojKoiXq+LzZvuSce70KPMPdeM1Rj03k4dR7lDslhbqXn3Ang4EU3+EAmwEAsbrjHW3g==
 
-"@imgly/background-removal-data@^1.4.5":
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/@imgly/background-removal-data/-/background-removal-data-1.4.5.tgz#7ae6b2efda2b51bea8aa01dda727093b6a6e8a0e"
-  integrity sha512-iRXZpPd7YirbJ4eOZ3SlvbdJkAc/LxVjzWLMHOezmRrVThPJPdPc+Y2kHEAVFEVvpDIuvBDyOfTTFBSJT2QR5w==
-  dependencies:
-    onnxruntime-web "~1.17.0"
-
-"@imgly/background-removal@^1.4.5":
+"@imgly/background-removal@1.4.5":
   version "1.4.5"
   resolved "https://registry.yarnpkg.com/@imgly/background-removal/-/background-removal-1.4.5.tgz#3d8dda715f2d2732e8efea7bc2b8d9ff931cec9d"
   integrity sha512-rkpID6Uoj7VWk51qwaumDFTO4YjlkwI99EBSyUiJk894hDQAp63KaoDaMSEqUqKehnmvXOVvld8ZH+6qy8XljA==
@@ -767,14 +760,13 @@
   resolved "https://registry.yarnpkg.com/@types/web-bluetooth/-/web-bluetooth-0.0.20.tgz#f066abfcd1cbe66267cdbbf0de010d8a41b41597"
   integrity sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==
 
-"@umoteam/editor@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@umoteam/editor/-/editor-1.0.1.tgz#b19eb45e023846ce19ef8639b538b33273c1ac1f"
-  integrity sha512-z//Yzn4lJ+GvVvK6y6A5B8XEfNbR9WmU3KAcbmcxaw9WktKtKYJcYydMuz44AH4g6A2xt+p+eDw1tIV+EkzSIg==
+"@umoteam/editor@^1.1.0":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@umoteam/editor/-/editor-1.1.1.tgz#77252454a7de4de4f3d08c83aadca5321a3edafe"
+  integrity sha512-KP//h4/Zn0y7jVduh9ZQ6e7dSy+3xlDtc6muiC8TqoiKsKn1YzJ0d2k82efsluBJpb1+byzk0o34GQkdvQl5CQ==
   dependencies:
     "@humanwhocodes/object-schema" "^2.0.3"
-    "@imgly/background-removal" "^1.4.5"
-    "@imgly/background-removal-data" "^1.4.5"
+    "@imgly/background-removal" "1.4.5"
     "@sereneinserenade/tiptap-search-and-replace" "^0.1.1"
     "@tiptap-pro/extension-invisible-characters" "^2.8.6"
     "@tiptap-pro/extension-mathematics" "^2.8.6"
@@ -813,13 +805,12 @@
     jsbarcode "^3.11.6"
     katex "^0.16.10"
     mermaid "^10.9.0"
-    monaco-editor "^0.48.0"
     nzh "^1.0.12"
     plyr "^3.7.8"
     pretty-bytes "^6.1.1"
     prism-code-editor "^3.3.1"
+    prismjs "^1.29.0"
     qrcode-svg "^1.1.0"
-    simple-code-editor "^2.0.9"
     svg64 "^2.0.0"
     tdesign-vue-next "^1.9.4"
     vue "^3.4.27"
@@ -1837,11 +1828,6 @@ has-flag@^4.0.0:
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-4.0.0.tgz#944771fd9c81c81265c4d6941860da06bb59479b"
   integrity sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
 
-highlight.js@^11.8.0:
-  version "11.9.0"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.9.0.tgz#04ab9ee43b52a41a047432c8103e2158a1b8b5b0"
-  integrity sha512-fJ7cW7fQGCYAkgv4CPfwFHrfd/cLS4Hau96JuJ+ZTOWhjnhoeN1ub1tFmALm/+lW5z4WCAuAV9bm05AP0mS6Gw==
-
 hotkeys-js@^3.13.7:
   version "3.13.7"
   resolved "https://registry.yarnpkg.com/hotkeys-js/-/hotkeys-js-3.13.7.tgz#0188d8e2fca16a3f1d66541b48de0bb9df613726"
@@ -2355,11 +2341,6 @@ mitt@^3.0.1:
   resolved "https://registry.yarnpkg.com/mitt/-/mitt-3.0.1.tgz#ea36cf0cc30403601ae074c8f77b7092cdab36d1"
   integrity sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw==
 
-monaco-editor@^0.48.0:
-  version "0.48.0"
-  resolved "https://registry.yarnpkg.com/monaco-editor/-/monaco-editor-0.48.0.tgz#9e54541bbe0ba3f2bb238477d5b981a282205ea0"
-  integrity sha512-goSDElNqFfw7iDHMg8WDATkfcyeLTNpBHQpO8incK6p5qZt5G/1j41X0xdGzpIkGojGXM+QiRQyLjnfDVvrpwA==
-
 mri@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/mri/-/mri-1.2.0.tgz#6721480fec2a11a4889861115a48b6cbe7cc8f0b"
@@ -2557,6 +2538,11 @@ prism-code-editor@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/prism-code-editor/-/prism-code-editor-3.3.1.tgz#595bc64909e9b1e45aaae4ebc612790ca906200e"
   integrity sha512-OFfXi1GgoeOwUAeC4K3iRZty0tSbuC3hin+UeYhGPWddsMUWGu8FqxENCr+R+ODC2PUkfU05EnS6qRjV9TvfMg==
+
+prismjs@^1.29.0:
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.29.0.tgz#f113555a8fa9b57c35e637bba27509dcf802dd12"
+  integrity sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==
 
 prosemirror-changeset@^2.2.1:
   version "2.2.1"
@@ -2861,13 +2847,6 @@ shebang-regex@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
-
-simple-code-editor@^2.0.9:
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/simple-code-editor/-/simple-code-editor-2.0.9.tgz#966d3e9fceb3b031348adb79ed3fff0a0230dc7a"
-  integrity sha512-bDekCSgcaFn79kiB6N+S07/m9fLLfgHchVsKhMLyKsqZNaRC5GWxn2fpbMZPKmORDyWzUML3hy2mrN3XWyGSfA==
-  dependencies:
-    highlight.js "^11.8.0"
 
 sortablejs@^1.15.0:
   version "1.15.2"
