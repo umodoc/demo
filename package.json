@@ -18,19 +18,19 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@umoteam/editor": "^1.1.2",
+    "@umoteam/editor": "^1.2.0-beta.1",
     "@vueuse/core": "^10.9.0",
     "tweakpane": "^4.0.3",
-    "vue": "^3.4.26"
+    "vue": "^3.4.27"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/eslint-config-prettier": "^9.0.0",
-    "eslint": "^9.1.1",
-    "eslint-plugin-vue": "^9.23.0",
+    "eslint": "^9.3.0",
+    "eslint-plugin-vue": "^9.26.0",
     "less": "^4.2.0",
     "less-loader": "^12.2.0",
     "prettier": "^3.2.5",
-    "vite": "^5.2.8"
+    "vite": "^5.2.11"
   }
 }
