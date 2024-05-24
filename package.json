@@ -18,7 +18,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@umoteam/editor": "^1.2.0-beta.1",
+    "@umoteam/editor": "^1.2.0",
     "@vueuse/core": "^10.9.0",
     "tweakpane": "^4.0.3",
     "vue": "^3.4.27"
