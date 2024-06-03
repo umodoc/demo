@@ -760,10 +760,10 @@
   resolved "https://registry.yarnpkg.com/@types/web-bluetooth/-/web-bluetooth-0.0.20.tgz#f066abfcd1cbe66267cdbbf0de010d8a41b41597"
   integrity sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==
 
-"@umoteam/editor@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@umoteam/editor/-/editor-1.3.1.tgz#cfd3e233ef6ffbc9926b14dd8db5facc00e292fe"
-  integrity sha512-TmVCXO/vRBF4tFDChWi1ZNEMIghVXCj6ezoulG6hWaM6tuVmgWpUJ0YMBanaIXFbp9pgmTrGCjgWu/jaQs2U3Q==
+"@umoteam/editor@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@umoteam/editor/-/editor-1.4.0.tgz#707d80a2cf3befe1c78eea8363e85483227e28b8"
+  integrity sha512-SJb1W4QfoEvooPE5URVz7HSGylFMbVQ3qaGV5u+wWhbN07mqTs7MigtWQf++pQi29QKdlEUS6Vo79bRv5NaukQ==
   dependencies:
     "@humanwhocodes/object-schema" "^2.0.3"
     "@imgly/background-removal" "1.4.5"
