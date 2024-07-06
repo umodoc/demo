@@ -1,6 +1,6 @@
 {
   "name": "editor-demo",
-  "version": "2.0.0-beta.1",
+  "version": "2.1.0",
   "description": "Umo Editor Playground. Umo Editor 在线示例",
   "type": "module",
   "author": {
@@ -18,7 +18,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@umoteam/editor": "@umoteam/editor@latest",
+    "@umoteam/editor": "@umodoc/editor@latest",
     "@vueuse/core": "^10.9.0",
     "tweakpane": "^4.0.3",
     "vue": "^3.4.27",
