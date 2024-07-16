@@ -460,7 +460,6 @@ onMounted(() => {
     setLocale(locale.value)
   }
   editorRef.value.setContent(content[locale.value])
-  editorRef.value.focus()
 })
 // 初始化设置面板
 const initPane = () => {
