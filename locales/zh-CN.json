@@ -27,6 +27,7 @@
   "onChangedPageWatermark": "页面水印信息发生变化",
   "onChangedLocale": "语言设置发生变化",
   "onChangedTheme": "主题设置发生变化",
+  "onContentError": "文档内容解析出错",
   "onPrint": "打印页面",
   "onFocus": "编辑器获得焦点",
   "onBlur": "编辑器失去焦点",

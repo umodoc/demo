@@ -27,6 +27,7 @@
   "onChangedPageWatermark": "Page watermark has changed.",
   "onChangedLocale": "Language setting has changed.",
   "onChangedTheme": "Theme setting has changed.",
+  "onContentError": "Document content parsing error.",
   "onPrint": "Printing page.",
   "onFocus": "Editor has gained focus.",
   "onBlur": "Editor has lost focus.",

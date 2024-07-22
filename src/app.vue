@@ -70,6 +70,7 @@
           @changed:page-watermark="onChangedPageWatermark"
           @changed:locale="onChangedLocale"
           @changed:theme="onChangedTheme"
+          @content-error="onContentError"
           @print="onPrint"
           @focus="onFocus"
           @blur="onBlur"
@@ -397,6 +398,13 @@ const onChangedLocale = (locale, oldLocale) => {
 }
 const onChangedTheme = (theme) => {
   console.log('onChanged:theme', t('onChangedTheme'), theme)
+}
+const onContentError = (theme) => {
+  console.log('onContentError', t('onContentError'), {
+    editor,
+    error,
+    disableCollaboration,
+  })
 }
 const onPrint = () => {
   useLogger('onPrint', t('onPrint'))

@@ -1,6 +1,6 @@
 {
   "name": "editor-demo",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Umo Editor Playground. Umo Editor 在线示例",
   "type": "module",
   "author": {
@@ -18,20 +18,20 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@umoteam/editor": "latest",
+    "@umoteam/editor": "2.3.0",
     "@vueuse/core": "^10.9.0",
     "tweakpane": "^4.0.3",
-    "vue": "^3.4.27",
+    "vue": "^3.4.33",
     "vue-i18n": "^9.13.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/eslint-config-prettier": "^9.0.0",
-    "eslint": "^9.3.0",
+    "eslint": "^9.7.0",
     "eslint-plugin-vue": "^9.26.0",
     "less": "^4.2.0",
     "less-loader": "^12.2.0",
-    "prettier": "^3.2.5",
-    "vite": "^5.2.11"
+    "prettier": "^3.3.3",
+    "vite": "^5.3.4"
   }
 }
