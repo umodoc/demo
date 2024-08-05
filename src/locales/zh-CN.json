@@ -33,6 +33,8 @@
   "onBlur": "编辑器失去焦点",
   "onSaved": "文档已保存",
   "onDestroy": "编辑器组件已销毁",
+  "slotDemo": "插槽演示",
+  "slotDemoDesc": "这是一个通过插槽插入的自定义内容，同时也是一个简单的 <UmoMenuButton> 组件的使用示例。更多 UI 组件请查看开发文档。",
   "options": {
     "title": "参数设置",
     "toolbar": {
@@ -82,6 +84,11 @@
         "interval": "自动保存间隔时间(ms)"
       }
     },
+    "assistant": {
+      "name": "AI 文档助手",
+      "enabled": "开启文档助手",
+      "maxlength": "最大输入长度"
+    },
     "other": {
       "name": "其他设置",
       "fileMaxSize": "文件大小限制(B)",
@@ -112,6 +119,10 @@
     "getContentExcerptEmpty": "当前文档无摘要信息",
     "saveContent": "保存文档内容",
     "getEditor": "获取编辑器实例",
+    "getTableOfContents": "获取页面大纲",
+    "getSelectionText": "获取当前选中文本",
+    "getSelectionNode": "获取当前选中节点",
+    "deleteSelectionNode": "删除当前选中节点",
     "getLocale": "获取语言设置",
     "getLocaleAlert": "当前语言设置为: ",
     "getI18n": "i18n 信息",
@@ -181,5 +192,79 @@
     "dark": "暗色主题",
     "copy": "复制主题配置到剪切板",
     "copySuccess": "当前主题配置已复制到剪切板。"
+  },
+  "aiConfig": {
+    "error": "AI 文档助手配置可能有误，请重新设置。",
+    "title": "AI 文档助手配置",
+    "tips": "<p>以下仅列举了支持通过 <a href=\"https://www.npmjs.com/package/openai\">OpenAI SDK</a> 调用的部分 AI 模型，用于测试 AI 文档助手，理论上，AI 文档助手可以支持所有 AI 模型，更多信息请查看 <a href=\"https://editor.umodoc.com/cn/docs/assistant\" target=\"_blank\">开发文档</a>。</p><p>我们不会存储您的填写的任何数据，所有数据均保存在本地，请放心使用。如果您想重置这些设置，清除浏览器本地存储即可。</p>",
+    "aiType": "AI 类型",
+    "customType": "其他支持通过 OpenAI SDK 调用的 AI 模型",
+    "baseURL": "基础 URL",
+    "apiKey": "API Key",
+    "model": "模型名称",
+    "confirm": "确认",
+    "cancel": "取消"
+  },
+  "demo": {
+    "overview": {
+      "title": "Umo Editor 组件说明",
+      "content": "<p>为了保持一致的用户体验，减少开发工作量，自 v3.0 版本开始，Umo Editor 对外提供了一部分的组件，详细的参数配置、事件方法等见：<a href=\"https://editor.umodoc.com/cn/compontents\">开发文档 - 组件列表</a>。</p><p>这些组件都是基于 <a href=\"https://tdesign.tencent.com/vue-next/overview\">TDesign Vue Next</a> 的部分组件开发或二次封装，因此在大部分情况下，它们有着相同的配置和使用方式。</p><p>因为本页面仅做示例使用，未引入 Umo Editor 组件，缺少 Umo Editor 的宿主环境，部分组件可能无法正确显示或使用。</p>"
+    },
+    "menuButton": {
+      "title": "菜单按钮组件",
+      "showHuge": "显示为大按钮",
+      "button": {
+        "title": "Button 按钮",
+        "hideText": "小按钮时不显示文字",
+        "showText": "显示文字",
+        "textContent": "文字内容",
+        "customTooltip": "自定义 tooltip",
+        "shortcut": "tooltip 显示快捷键",
+        "shortcutText": "在按钮显示快捷键",
+        "menuActive": "激活状态",
+        "disabled": "禁用状态",
+        "buttonClickAlert": "菜单按钮被单击"
+      },
+      "dropdown": {
+        "title": "Dropdown 下拉菜单",
+        "default": "默认 dropdown 下拉菜单",
+        "useSlot": "使用插槽自定义下拉菜单内容",
+        "options": {
+          "item1": "选项一",
+          "item2": "选项二",
+          "item3": "选项二"
+        }
+      },
+      "select": {
+        "title": "Select 选择框",
+        "default": "默认 select 选择框",
+        "useSlot": "使用插槽自定义选择框内容",
+        "options": {
+          "item1": "选项一",
+          "item2": "选项二",
+          "item3": "选项二"
+        }
+      },
+      "popup": {
+        "title": "Popup 弹出框",
+        "default": "演示 popup 弹出框",
+        "content": "这里是 Popup 的内容，通过 content 插槽显示内容。"
+      }
+    },
+    "tooltip": {
+      "title": "文字提示组件",
+      "default": "基础示例",
+      "content": "这里是 tooltip 的内容",
+      "buttonText": "鼠标移到此处查看效果"
+    },
+    "dialog": {
+      "title": "对话框组件",
+      "default": "基础示例",
+      "buttonText": "点击这里打开示例对话框",
+      "content": "这里是对话框的内容",
+      "header": "对话框示例",
+      "confirm": "确认",
+      "cancel": "取消"
+    }
   }
 }

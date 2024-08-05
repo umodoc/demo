@@ -33,6 +33,8 @@
   "onBlur": "Editor has lost focus.",
   "onSaved": "Document has been saved.",
   "onDestroy": "Editor component has been destroyed.",
+  "slotDemo": "Slot Demo",
+  "slotDemoDesc": "This is a custom content inserted through a slot, as well as a simple usage example of the <UmoMenuButton> component. For more UI components, please refer to the development documentation.",
   "options": {
     "title": "Configuration",
     "toolbar": {
@@ -82,6 +84,11 @@
         "interval": "Auto Save Interval (ms)"
       }
     },
+    "assistant": {
+      "name": "AI Assistant",
+      "enabled": "Enable Assistant",
+      "maxlength": "Maximum Input Length"
+    },
     "other": {
       "name": "Other",
       "fileMaxSize": "File Size Limit (B)",
@@ -113,6 +120,10 @@
     "getContentExcerptEmpty": "No excerpt information for the document",
     "saveContent": "Save Document Content",
     "getEditor": "Get Editor Instance",
+    "getTableOfContents": "Get Table of Contents",
+    "getSelectionText": "Get selected text",
+    "getSelectionNode": "Get selected node",
+    "deleteSelectionNode": "Delete selected node",
     "getLocale": "Get Locale",
     "getLocaleAlert": "The locale setting:",
     "getI18n": "Get I18n Instance",
@@ -182,5 +193,79 @@
     "dark": "Dark Mode",
     "copy": "Copy Theme Settings to Clipboard",
     "copySuccess": "Theme settings have been copied to the clipboard."
+  },
+  "aiConfig": {
+    "error": "AI Assistant configuration may be incorrect, please reset.",
+    "title": "AI Assistant Configuration",
+    "tips": "<p>The following lists only a portion of the AI models that can be invoked through the <a href=\"https://www.npmjs.com/package/openai\">OpenAI SDK</a>, which can be used to test the AI Document Assistant. Theoretically, the AI Document Assistant can support all AI models. For more information, please refer to the <a href=\"https://editor.umodoc.com/cn/docs/assistant\" target=\"_blank\">Developer Documentation</a>.</p><p>We do not store any data you enter; all data is saved locally. Please use it with confidence. If you want to reset these settings, simply clear your browser's local storage.</p>",
+    "aiType": "AI Type",
+    "customType": "Other AI models supported through the OpenAI SDK",
+    "baseURL": "Base URL",
+    "apiKey": "API Key",
+    "model": "Model Name",
+    "confirm": "Confirm",
+    "cancel": "Cancel"
+  },
+  "demo": {
+    "overview": {
+      "title": "Umo Editor Component",
+      "content": "<p>To maintain a consistent user experience and reduce development workload, starting from version v3.0, Umo Editor provides a set of components externally. For detailed parameter configurations, event methods, etc., see: <a href=\"https://editor.umodoc.com/en/components\">Documentation - Components</a>.</p><p>These components are developed or wrapped based on parts of the components in <a href=\"https://tdesign.tencent.com/vue-next/overview-en\">TDesign Vue Next</a>. Therefore, in most cases, they have the same configuration and usage.</p><p>Because this page is only for demonstration purposes and does not include Umo Editor components, lacking the host environment of Umo Editor, some components may not be displayed or used correctly.</p>"
+    },
+    "menuButton": {
+      "title": "Menu Button Component",
+      "showHuge": "Show as Huge Button",
+      "button": {
+        "title": "Button",
+        "hideText": "Hide Text for Small Button",
+        "showText": "Show Text",
+        "textContent": "Text Content",
+        "customTooltip": "Custom Tooltip",
+        "shortcut": "Show Shortcut in Tooltip",
+        "shortcutText": "Display Shortcut on Button",
+        "menuActive": "Active State",
+        "disabled": "Disabled State",
+        "buttonClickAlert": "Menu Button Clicked"
+      },
+      "dropdown": {
+        "title": "Dropdown",
+        "default": "Default Dropdown Menu",
+        "useSlot": "Use Slot to Customize Dropdown Menu Content",
+        "options": {
+          "item1": "Option One",
+          "item2": "Option Two",
+          "item3": "Option Three"
+        }
+      },
+      "select": {
+        "title": "Select",
+        "default": "Default Select Box",
+        "useSlot": "Use Slot to Customize Select Box Content",
+        "options": {
+          "item1": "Option One",
+          "item2": "Option Two",
+          "item3": "Option Three"
+        }
+      },
+      "popup": {
+        "title": "Popup",
+        "default": "Popup demo",
+        "content": "This is the content of the Popup, displayed through the content slot."
+      }
+    },
+    "tooltip": {
+      "title": "Tooltip Component",
+      "default": "Basic Example",
+      "content": "This is the content of the tooltip.",
+      "buttonText": "Hover over here to view the tooltip."
+    },
+    "dialog": {
+      "title": "Dialog Component",
+      "default": "Basic Example",
+      "buttonText": "Click Here to Open Sample Dialog",
+      "content": "This is the content of the dialog.",
+      "header": "Dialog Example",
+      "confirm": "Confirm",
+      "cancel": "Cancel"
+    }
   }
 }
