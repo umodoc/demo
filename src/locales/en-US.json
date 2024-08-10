@@ -42,6 +42,7 @@
       "mode": "Default Toolbar",
       "ribbon": "Ribbon",
       "classic": "Classic",
+      "importWord": "Import Word Function",
       "enableSourceEditor": "Source Code Editor"
     },
     "page": {
@@ -123,6 +124,7 @@
     "getTableOfContents": "Get Table of Contents",
     "getSelectionText": "Get selected text",
     "getSelectionNode": "Get selected node",
+    "setCurrentNodeSelection": "Select the current node",
     "deleteSelectionNode": "Delete selected node",
     "getLocale": "Get Locale",
     "getLocaleAlert": "The locale setting:",
@@ -154,7 +156,7 @@
     "warningColor": "Warning Color",
     "errorColor": "Error Color",
     "containerBackground": "Container Background",
-    "buttonHoverBackground": "Button Hover Background",
+    "buttonHoverBackground": "Text selection background",
     "fontFamily": "Font Family",
     "fontSize": "Font Size",
     "fontSizeSmall": "Small Font Size",

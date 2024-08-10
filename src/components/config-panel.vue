@@ -77,11 +77,14 @@ const initOptionsPane = (tab) => {
   toolbar.addBinding(options.toolbar, 'enableSourceEditor', {
     label: t('options.toolbar.enableSourceEditor'),
   })
-  const page = params.addFolder({
-    title: t('options.page.name'),
+  toolbar.addBinding(options.toolbar.importWord, 'enabled', {
+    label: t('options.toolbar.importWord'),
   })
 
   // 页面设置
+  const page = params.addFolder({
+    title: t('options.page.name'),
+  })
   page
     .addBlade({
       view: 'list',
@@ -482,6 +485,16 @@ const initEventsAndMethodsPane = (tab) => {
     useLogger('getSelectionNode', editorRef.getSelectionNode())
   })
 
+  // 选中当前节点
+  const setCurrentNodeSelectionButton = events.addButton({
+    title: t('ems.setCurrentNodeSelection'),
+    label: 'setCurrentNodeSelection',
+  })
+  setCurrentNodeSelectionButton.on('click', () => {
+    useConsole()
+    useLogger('setCurrentNodeSelection', editorRef.setCurrentNodeSelection())
+  })
+
   // 删除当前选中节点
   const deleteSelectionNodeButton = events.addButton({
     title: t('ems.deleteSelectionNode'),
@@ -668,6 +681,9 @@ const initThemesPane = (tab) => {
   })
   color.addBinding(themeVars, '--umo-button-hover-background', {
     label: t('themes.buttonHoverBackground'),
+  })
+  color.addBinding(themeVars, '--umo-text-selection-background', {
+    label: t('themes.textSelectionBackground'),
   })
 
   // 字体

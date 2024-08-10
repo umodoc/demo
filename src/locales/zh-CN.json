@@ -42,6 +42,7 @@
       "mode": "默认工具栏",
       "ribbon": "专业工具栏",
       "classic": "经典工具栏",
+      "importWord": "导入Word功能",
       "enableSourceEditor": "源代码编辑"
     },
     "page": {
@@ -122,6 +123,7 @@
     "getTableOfContents": "获取页面大纲",
     "getSelectionText": "获取当前选中文本",
     "getSelectionNode": "获取当前选中节点",
+    "setCurrentNodeSelection": "选中当前节点",
     "deleteSelectionNode": "删除当前选中节点",
     "getLocale": "获取语言设置",
     "getLocaleAlert": "当前语言设置为: ",
@@ -154,6 +156,7 @@
     "errorColor": "错误颜色",
     "containerBackground": "容器背景",
     "buttonHoverBackground": "按钮hover背景",
+    "textSelectionBackground": "文本选中背景",
     "fontFamily": "基本字体",
     "fontSize": "字体大小",
     "fontSizeSmall": "小号字体",

@@ -8,8 +8,6 @@
 <script setup>
 import { UmoEditor } from '@/paged/umo-editor'
 import getOptions from '@/configs/options'
-import { assert } from '@vueuse/core'
-import Assistant from '@/components/assistant.vue'
 
 const route = useRoute()
 

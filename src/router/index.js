@@ -2,7 +2,7 @@ import { createWebHistory, createRouter } from 'vue-router'
 import Index from '@/views/index.vue'
 import Editor from '@/views/editor.vue'
 import Components from '@/views/components.vue'
-import Paged from '@/views/paged.vue'
+// import Paged from '@/views/paged.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -22,11 +22,11 @@ const router = createRouter({
       name: 'components',
       component: Components,
     },
-    {
-      path: '/paged',
-      name: 'paged',
-      component: Paged,
-    },
+    // {
+    //   path: '/paged',
+    //   name: 'paged',
+    //   component: Paged,
+    // },
   ],
 })
 
