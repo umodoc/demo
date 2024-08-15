@@ -821,10 +821,10 @@
   resolved "https://registry.yarnpkg.com/@umoteam/editor-external/-/editor-external-4.0.0.tgz#3cfa8310c75fb1affeaa26fe909024e3b1ace52b"
   integrity sha512-NVjwwUvNgGLNTY5xNu0GNIBkErypl8hpuVkEGs2gIeNM7tanptCcjdhP7bBEJTvPIJHokXYyN2NqpgSKgvi+nw==
 
-"@umoteam/editor@4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@umoteam/editor/-/editor-4.0.2.tgz#84a98f7515ebc0be73bfb5c94d1e1d132b92a3e3"
-  integrity sha512-LSb9RvLBl3OEOnp5b7yP6mnvkUFEiOCVhqZAN0RDzJKPUOjFSBJbygnO8thIQpMqYrYTKkxBVzVGuYCz8h3EvA==
+"@umoteam/editor@4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@umoteam/editor/-/editor-4.0.3.tgz#8598bbdeae241dc1257100e7f022046e66462d73"
+  integrity sha512-gd2OlGxiKgthOtAtzmkytVQfwI0W0FFmyUvZAGXt7l8A33LRovI8rwJX8dSNg+MO4nEdtH5r9/TQO/mEWhzGAQ==
   dependencies:
     "@eslint/object-schema" "^2.1.4"
     "@imgly/background-removal" "1.5.3"
