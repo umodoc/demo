@@ -51,8 +51,7 @@
       "defaultOrientation": "默认纸张方向",
       "portrait": "纵向",
       "landscape": "横向",
-      "defaultBackground": "默认背景",
-      "showBreakMarks": "默认显示换行符"
+      "defaultBackground": "默认背景"
     },
     "watermark": {
       "name": "页面水印设置",
@@ -114,6 +113,7 @@
     "setDocumentAlert": "本示例设置文档标题为: {content}",
     "setContent": "设置文档内容",
     "setContentText": "这是调用 <code>setContent(...)</code> 方法更新后的内容",
+    "setPagination": "设置分页(关闭)",
     "getContent": "获取文档内容",
     "getContentExcerpt": "获取文档摘要",
     "getContentExcerptAlert": "文档摘要信息",

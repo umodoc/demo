@@ -51,8 +51,7 @@
       "defaultOrientation": "Page Orientation",
       "portrait": "Portrait",
       "landscape": "Landscape",
-      "defaultBackground": "Background",
-      "showBreakMarks": "Show Line Break Marks"
+      "defaultBackground": "Background"
     },
     "watermark": {
       "name": "Watermark",
@@ -115,6 +114,7 @@
     "setDocumentAlert": "This example sets the document title to: {content}",
     "setContent": "Set Document Content",
     "setContentText": "This is the content updated after calling the <code>setContent(...)</code> method",
+    "setPagination": "Set pagination (disable)",
     "getContent": "Get Document Content",
     "getContentExcerpt": "Get Document Excerpt",
     "getContentExcerptAlert": "Document Excerpt",

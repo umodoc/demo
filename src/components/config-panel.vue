@@ -122,15 +122,6 @@ const initOptionsPane = (tab) => {
         background: value,
       })
     })
-  page
-    .addBinding(options.page, 'showBreakMarks', {
-      label: t('options.page.showBreakMarks'),
-    })
-    .on('change', ({ value }) => {
-      editorRef.setPage({
-        showBreakMarks: value,
-      })
-    })
 
   // 水印设置
   const watermark = params.addFolder({
@@ -410,6 +401,15 @@ const initEventsAndMethodsPane = (tab) => {
   })
   setContentButton.on('click', () => {
     editorRef.setContent(t('ems.setContentText'))
+  })
+
+  // 设置分页
+  const setPaginationButton = events.addButton({
+    title: t('ems.setPagination'),
+    label: 'setPagination',
+  })
+  setPaginationButton.on('click', () => {
+    editorRef.setPagination(false)
   })
 
   // 获取文档内容
