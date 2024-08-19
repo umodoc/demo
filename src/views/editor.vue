@@ -44,6 +44,12 @@
           @menu-click="openButtonMenuButton"
         />
       </template>
+      <template #page_header>
+        <page-header />
+      </template>
+      <template #page_footer="props">
+        <page-footer v-bind="props" />
+      </template>
     </umo-editor>
     <assistant :visible="aiConfigVisible" @close="closeAiConfig" />
   </main>

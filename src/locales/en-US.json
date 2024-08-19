@@ -208,6 +208,11 @@
     "confirm": "Confirm",
     "cancel": "Cancel"
   },
+  "pageHeader": "<p>This is an example of a page header slot, which can be customized through slots.</p><p>More information can be found at: <a href=\"http://editor.umodoc.com/en/docs\" target=\"_blank\">http://editor.umodoc.com/en/docs</a></p>",
+  "pageFooter": {
+    "left": "This is an example of a page footer slot, which can be customized through slots.",
+    "right": "Page { pageNumber } of { totalPages }"
+  },
   "demo": {
     "overview": {
       "title": "Umo Editor Component",

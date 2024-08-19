@@ -208,6 +208,11 @@
     "confirm": "确认",
     "cancel": "取消"
   },
+  "pageHeader": "<p>这是一个页眉插槽的示例，可以通过插槽实现自定义页眉</p><p>更多信息请访问: <a href=\"http://editor.umodoc.com/cn/docs\" target=\"_blank\">http://editor.umodoc.com/cn/docs</a></p>",
+  "pageFooter": {
+    "left": "这是一个页脚插槽的示例，可以通过插槽实现自定义页脚",
+    "right": "当前第 { pageNumber } 页 / 总共 { totalPages } 页"
+  },
   "demo": {
     "overview": {
       "title": "Umo Editor 组件说明",
