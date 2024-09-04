@@ -13,6 +13,7 @@ import { t, locale } from '@/composables/i18n'
 
 <style lang="less" scoped>
 .page-header-slot {
+  user-select: none;
   display: flex;
   height: 100%;
   box-sizing: border-box;

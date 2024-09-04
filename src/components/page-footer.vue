@@ -24,6 +24,7 @@ const props = defineProps({
 
 <style lang="less" scoped>
 .page-footer-slot {
+  user-select: none;
   display: flex;
   height: 100%;
   box-sizing: border-box;
