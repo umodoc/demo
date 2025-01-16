@@ -10,7 +10,7 @@ const defaultOptions = {
     title: 'Example Document',
   },
   cdnUrl: 'https://cdn.umodoc.com',
-  onSave(content, page, document) {
+  async onSave(content, page, document) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         const success = true

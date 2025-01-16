@@ -58,7 +58,6 @@
 <script setup>
 import { t, locale } from '@/composables/i18n'
 import pkg from '../../package.json'
-console.log(pkg)
 
 const route = useRoute()
 const router = useRouter()

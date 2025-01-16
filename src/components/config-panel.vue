@@ -455,6 +455,16 @@ const initEventsAndMethodsPane = (tab) => {
     useLogger('getEditor', editorRef.getEditor())
   })
 
+  // 获取编辑器实例
+  const useEditorButton = events.addButton({
+    title: t('ems.useEditor'),
+    label: 'useEditor',
+  })
+  useEditorButton.on('click', () => {
+    useConsole()
+    useLogger('useEditor', editorRef.useEditor())
+  })
+
   // 获取页面大纲
   const getTocButton = events.addButton({
     title: t('ems.getTableOfContents'),
