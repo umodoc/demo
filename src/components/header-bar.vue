@@ -23,7 +23,7 @@
         </a> -->
     <a
       class="home"
-      :href="`https://editor.umodoc.com/${locale === 'zh-CN' ? 'cn' : 'en'}/docs`"
+      :href="`https://${version === 'v4' ? 'v4.' : ''}editor.umodoc.com/${locale === 'zh-CN' ? 'cn' : 'en'}/docs`"
       target="_blank"
     >
       <img src="/home.svg" height="18" />
@@ -52,6 +52,13 @@
         <option value="auto">{{ t('autoTheme') }}</option>
       </select>
     </a>
+    <a>
+      <img src="/version.svg" height="18" />
+      <select class="version-select" v-model="version">
+        <option value="v4">{{ t('version4') }}</option>
+        <option value="latest">{{ t('versionLatest') }}</option>
+      </select>
+    </a>
   </div>
 </template>
 
@@ -62,6 +69,7 @@ import pkg from '../../package.json'
 const route = useRoute()
 const router = useRouter()
 
+const version = ref('v4')
 const theme = ref('light')
 const showPane = ref(true)
 
@@ -115,6 +123,16 @@ watch(
     }
   },
 )
+
+watch(
+  () => version.value,
+  (v) => {
+    const urlParams = new URLSearchParams(window.location.search).toString()
+    if (v === 'latest') {
+      location.href = `https://demo.umodoc.com/editor${urlParams !== '' ? `?${urlParams}` : ''}`
+    }
+  },
+)
 </script>
 
 <style lang="less" scoped>
@@ -143,7 +161,7 @@ a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1200px) {
     display: none;
   }
 }

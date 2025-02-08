@@ -2,6 +2,8 @@
   "title": "Umo Editor Playground",
   "home": "Documentation",
   "pane": "Settings Panel",
+  "version4": "v4.x",
+  "versionLatest": "Latest",
   "lightTheme": "Light",
   "darkTheme": "Dark",
   "autoTheme": "System",

@@ -2,6 +2,8 @@
   "title": "Umo Editor 在线示例",
   "home": "开发文档",
   "pane": "设置面板",
+  "version4": "v4.x",
+  "versionLatest": "最新版",
   "lightTheme": "浅色主题",
   "darkTheme": "深色主题",
   "autoTheme": "跟随系统",
