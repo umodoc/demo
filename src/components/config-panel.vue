@@ -394,6 +394,15 @@ const initEventsAndMethodsPane = (tab) => {
     options.document.title = title
   })
 
+  // 获取页面配置
+  const getPageButton = events.addButton({
+    title: t('ems.getPage'),
+    label: 'getPage',
+  })
+  getPageButton.on('click', () => {
+    useLogger('getPage', editorRef.getPage())
+  })
+
   // 设置文档内容
   const setContentButton = events.addButton({
     title: t('ems.setContent'),
@@ -401,15 +410,6 @@ const initEventsAndMethodsPane = (tab) => {
   })
   setContentButton.on('click', () => {
     editorRef.setContent(t('ems.setContentText'))
-  })
-
-  // 设置分页
-  const setPaginationButton = events.addButton({
-    title: t('ems.setPagination'),
-    label: 'setPagination',
-  })
-  setPaginationButton.on('click', () => {
-    editorRef.setPagination(false)
   })
 
   // 获取文档内容

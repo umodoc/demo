@@ -114,7 +114,7 @@
     "setDocumentAlert": "This example sets the document title to: {content}",
     "setContent": "Set Document Content",
     "setContentText": "This is the content updated after calling the <code>setContent(...)</code> method",
-    "setPagination": "Set pagination (disable)",
+    "getPage": "Get Page Configuration",
     "getContent": "Get Document Content",
     "getContentExcerpt": "Get Document Excerpt",
     "getContentExcerptAlert": "Document Excerpt",
