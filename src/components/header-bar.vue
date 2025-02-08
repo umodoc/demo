@@ -69,7 +69,7 @@ import pkg from '../../package.json'
 const route = useRoute()
 const router = useRouter()
 
-const version = ref('v4')
+const version = ref('latest')
 const theme = ref('light')
 const showPane = ref(true)
 
@@ -128,8 +128,8 @@ watch(
   () => version.value,
   (v) => {
     const urlParams = new URLSearchParams(window.location.search).toString()
-    if (v === 'latest') {
-      location.href = `https://demo.umodoc.com/editor${urlParams !== '' ? `?${urlParams}` : ''}`
+    if (v === 'v4') {
+      location.href = `https://v4.demo.umodoc.com/editor${urlParams !== '' ? `?${urlParams}` : ''}`
     }
   },
 )
