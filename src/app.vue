@@ -56,7 +56,7 @@ watch(
   height: 100vh;
   display: flex;
   flex-direction: column;
-  min-width: 680px;
+  min-width: 1024px;
   min-height: 540px;
   overflow: auto;
   .header-container {
