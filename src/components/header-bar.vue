@@ -11,16 +11,6 @@
     {{ locale === 'zh-CN' ? '示例文档' : 'Example Document' }}
   </div>
   <div class="actions">
-    <!-- <a
-          class="github"
-          href="https://github.com/umodoc/editor"
-          target="_blank"
-        >
-          <img
-            src="https://img.shields.io/github/stars/umodoc/editor?style=social"
-            height="22"
-          />
-        </a> -->
     <a
       class="home"
       :href="`https://${version === 'v4' ? 'v4.' : ''}editor.umodoc.com/${locale === 'zh-CN' ? 'cn' : 'en'}/docs`"
@@ -58,6 +48,11 @@
         <option value="v4">{{ t('version4') }}</option>
         <option value="latest">{{ t('versionLatest') }}</option>
       </select>
+    </a>
+    <a class="github" href="https://github.com/umodoc/editor" target="_blank">
+      <img
+        src="https://img.shields.io/github/stars/umodoc/editor?style=social"
+      />
     </a>
   </div>
 </template>
@@ -179,6 +174,11 @@ a {
     cursor: pointer;
     &:hover {
       color: var(--umo-text-color);
+    }
+    &.github {
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
     }
     img {
       margin-right: 5px;
