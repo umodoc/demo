@@ -30,34 +30,34 @@
         >
           <t-collapse-panel :header="t('demo.menuButton.button.title')">
             <umo-menu-button
-              :huge="hugeMenuButton"
+              :force-huge="hugeMenuButton"
               :ico="demoMenuIcon"
               :text="t('demo.menuButton.button.hideText')"
               hide-text
               @menu-click="onMenuClick"
             />
             <umo-menu-button
-              :huge="hugeMenuButton"
+              :force-huge="hugeMenuButton"
               :ico="demoMenuIcon"
               :text="t('demo.menuButton.button.showText')"
               @menu-click="onMenuClick"
             />
             <umo-menu-button
-              :huge="hugeMenuButton"
+              :force-huge="hugeMenuButton"
               :ico="demoMenuIcon"
               :text="t('demo.menuButton.button.textContent')"
               :tooltip="t('demo.menuButton.button.customTooltip')"
               @menu-click="onMenuClick"
             />
             <umo-menu-button
-              :huge="hugeMenuButton"
+              :force-huge="hugeMenuButton"
               :ico="demoMenuIcon"
               :text="t('demo.menuButton.button.shortcut')"
               shortcut="Ctrl+Shift+X"
               @menu-click="onMenuClick"
             />
             <umo-menu-button
-              :huge="hugeMenuButton"
+              :force-huge="hugeMenuButton"
               class="menu-button-shortcut"
               :ico="demoMenuIcon"
               :text="t('demo.menuButton.button.shortcutText')"
@@ -65,14 +65,14 @@
               @menu-click="onMenuClick"
             />
             <umo-menu-button
-              :huge="hugeMenuButton"
+              :force-huge="hugeMenuButton"
               :ico="demoMenuIcon"
               :text="t('demo.menuButton.button.menuActive')"
               menu-active
               @menu-click="onMenuClick"
             />
             <umo-menu-button
-              :huge="hugeMenuButton"
+              :force-huge="hugeMenuButton"
               :ico="demoMenuIcon"
               :text="t('demo.menuButton.button.disabled')"
               disabled
@@ -81,7 +81,7 @@
           </t-collapse-panel>
           <t-collapse-panel :header="t('demo.menuButton.dropdown.title')">
             <umo-menu-button
-              :huge="hugeMenuButton"
+              :force-huge="hugeMenuButton"
               :ico="demoMenuIcon"
               :text="t('demo.menuButton.dropdown.default')"
               menu-type="dropdown"
@@ -90,7 +90,7 @@
             >
             </umo-menu-button>
             <umo-menu-button
-              :huge="hugeMenuButton"
+              :force-huge="hugeMenuButton"
               :ico="demoMenuIcon"
               :text="t('demo.menuButton.dropdown.useSlot')"
               menu-type="dropdown"
@@ -139,7 +139,7 @@
           </t-collapse-panel>
           <t-collapse-panel :header="t('demo.menuButton.popup.title')">
             <umo-menu-button
-              :huge="hugeMenuButton"
+              :force-huge="hugeMenuButton"
               :ico="demoMenuIcon"
               :text="t('demo.menuButton.popup.default')"
               menu-type="popup"

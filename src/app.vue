@@ -35,8 +35,7 @@ const setLocale = (lang) => {
   } else {
     locale.value = 'en-US'
   }
-  localStorage.setItem('umo-editor:demo:locale', locale.value)
-  localStorage.setItem('umo-editor:default:locale', locale.value)
+  localStorage.setItem('umo-editor:locale', locale.value)
 }
 
 watch(

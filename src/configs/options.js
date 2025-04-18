@@ -3,9 +3,6 @@ import content from './content'
 
 const defaultOptions = {
   editorKey: 'demo',
-  toolbar: {
-    enableSourceEditor: true,
-  },
   document: {
     title: 'Example Document',
   },
@@ -49,8 +46,10 @@ const getOptions = ({ theme, locale }) => {
     document: {
       content: content[locale],
     },
-    assistant: {
-      enabled: true,
+    ai: {
+      assistant: {
+        enabled: true,
+      },
     },
     templates: templates[locale],
   }

@@ -22,11 +22,6 @@ const router = createRouter({
       name: 'components',
       component: Components,
     },
-    // {
-    //   path: '/paged',
-    //   name: 'paged',
-    //   component: Paged,
-    // },
   ],
 })
 

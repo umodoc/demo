@@ -65,7 +65,7 @@
 </template>
 
 <script setup>
-import { UmoEditor, UmoMenuButton } from '@umoteam/editor'
+import { UmoMenuButton } from '@umoteam/editor'
 import OpenAI from 'openai'
 import { t, locale } from '@/composables/i18n'
 import getOptions from '@/configs/options'
@@ -73,7 +73,7 @@ import events from '@/configs/events'
 
 const route = useRoute()
 
-const options = ref({})
+const options = ref({ document: {} })
 const editorRef = ref(null)
 const showEditor = ref(false)
 const showPane = ref(false)
@@ -118,8 +118,8 @@ const aiConfigVisible = ref(false)
 const closeAiConfig = () => {
   aiConfigVisible.value = false
 }
-const onAssistant = async (payload, content) => {
-  console.log('onAssistant', { payload, content })
+const onAssistantMessage = async (payload, content) => {
+  console.log('onMessage', { payload, content })
   let config = {}
   const showErrorDialog = () => {
     const dialog = editorRef.value.useAlert({
@@ -194,8 +194,23 @@ onMounted(async () => {
   })
   options.value = {
     ...defaultOptions,
+    // 用户列表
+    users: [
+      { id: 'umodoc', label: 'Umo Team' },
+      { id: 'Cassielxd', label: 'Cassielxd' },
+      { id: 'Goldziher', label: "Na'aman Hirschfeld" },
+      { id: 'SerRashin', label: 'SerRashin' },
+      { id: 'ChenErik', label: 'ChenErik' },
+      { id: 'china-wangxu', label: 'china-wangxu' },
+      { id: 'Sherman Xu', label: 'xuzhenjun130' },
+      { id: 'testuser', label: '测试用户' },
+    ],
     // AI 文档助手
-    onAssistant,
+    ai: {
+      assistant: {
+        onMessage: onAssistantMessage,
+      },
+    },
   }
   showEditor.value = true
 

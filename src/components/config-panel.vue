@@ -74,9 +74,6 @@ const initOptionsPane = (tab) => {
     .on('change', ({ value }) => {
       editorRef.setToolbar({ mode: value, show: true })
     })
-  toolbar.addBinding(options.toolbar, 'enableSourceEditor', {
-    label: t('options.toolbar.enableSourceEditor'),
-  })
   toolbar.addBinding(options.toolbar.importWord, 'enabled', {
     label: t('options.toolbar.importWord'),
   })
@@ -196,11 +193,9 @@ const initOptionsPane = (tab) => {
   document.addBinding(options.document, 'enableBlockMenu', {
     label: t('options.document.enableBlockMenu'),
   })
-  document
-    .addBinding(options.document, 'enableMarkdown', {
-      label: t('options.document.enableMarkdown'),
-    })
-    .on('change', () => emits('reset-editor'))
+  document.addBinding(options.document, 'enableMarkdown', {
+    label: t('options.document.enableMarkdown'),
+  })
   document.addBinding(options.document, 'enableSpellcheck', {
     label: t('options.document.enableSpellcheck'),
   })
@@ -216,10 +211,10 @@ const initOptionsPane = (tab) => {
   const assistant = params.addFolder({
     title: t('options.assistant.name'),
   })
-  assistant.addBinding(options.assistant, 'enabled', {
+  assistant.addBinding(options.ai.assistant, 'enabled', {
     label: t('options.assistant.enabled'),
   })
-  assistant.addBinding(options.assistant, 'maxlength', {
+  assistant.addBinding(options.ai.assistant, 'maxlength', {
     label: t('options.assistant.maxlength'),
     step: 1,
   })
@@ -412,6 +407,15 @@ const initEventsAndMethodsPane = (tab) => {
     editorRef.setContent(t('ems.setContentText'))
   })
 
+  // 插入文档内容
+  const insertContentButton = events.addButton({
+    title: t('ems.insertContent'),
+    label: 'insertContent',
+  })
+  insertContentButton.on('click', () => {
+    editorRef.insertContent(t('ems.insertContentText'))
+  })
+
   // 获取文档内容
   const getContentButton = events.addButton({
     title: t('ems.getContent'),
@@ -473,6 +477,16 @@ const initEventsAndMethodsPane = (tab) => {
   getTocButton.on('click', () => {
     useConsole()
     useLogger('getTableOfContents', editorRef.getTableOfContents())
+  })
+
+  // 页面书签
+  const getAllBookmarksButton = events.addButton({
+    title: t('ems.getAllBookmarks'),
+    label: 'getAllBookmarks',
+  })
+  getAllBookmarksButton.on('click', () => {
+    useConsole()
+    useLogger('getAllBookmarks', editorRef.getAllBookmarks())
   })
 
   // 获取当前选中的文本内容
@@ -660,7 +674,7 @@ const initEventsAndMethodsPane = (tab) => {
     label: 'useMessage',
   })
   useMessageButton.on('click', () => {
-    editorRef.useMessage('info', 'Hello World')
+    editorRef.useMessage('info', { content: 'Hello World' })
   })
 }
 // 初始化主题设置面板

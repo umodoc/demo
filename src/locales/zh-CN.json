@@ -16,7 +16,7 @@
   "onCreated": "编辑器已创建",
   "onChanged": "编辑器内容已更新",
   "onChangedSelection": "所选内容已发生变化",
-  "onChangedTransaction": "编辑器状态已发生变化",
+  "onChangedTransaction": "编辑器事务已更新",
   "onChangedMenu": "菜单栏状态发生变化",
   "onChangedToolbar": "工具栏信息发生变化",
   "onChangedPageSize": "页面大小信息发生变化",
@@ -44,8 +44,7 @@
       "mode": "默认工具栏",
       "ribbon": "专业工具栏",
       "classic": "经典工具栏",
-      "importWord": "导入Word功能",
-      "enableSourceEditor": "源代码编辑"
+      "importWord": "导入Word功能"
     },
     "page": {
       "name": "页面设置",
@@ -115,6 +114,8 @@
     "setDocumentAlert": "本示例设置文档标题为: {content}",
     "setContent": "设置文档内容",
     "setContentText": "这是调用 <code>setContent(...)</code> 方法更新后的内容",
+    "insertContent": "插入文档内容",
+    "insertContentText": "这是调用 <code>insertContent(...)</code> 方法插入后的内容",
     "getPage": "获取页面配置",
     "getContent": "获取文档内容",
     "getContentExcerpt": "获取文档摘要",
@@ -124,6 +125,7 @@
     "getEditor": "获取编辑器的 Vue 实例",
     "useEditor": "获取编辑器实例",
     "getTableOfContents": "获取页面大纲",
+    "getAllBookmarks": "获取页面书签",
     "getSelectionText": "获取当前选中文本",
     "getSelectionNode": "获取当前选中节点",
     "setCurrentNodeSelection": "选中当前节点",

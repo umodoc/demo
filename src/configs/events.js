@@ -10,10 +10,13 @@ const events = {
     useLogger('onChanged', t('onChanged'), { editor })
   },
   onChangedSelection({ editor }) {
-    useLogger('onChangedSelection', t('onChanged'), { editor })
+    useLogger('onChangedSelection', t('onChangedSelection'), { editor })
   },
   onChangedTransaction({ editor, transaction }) {
-    useLogger('onChangedTransaction', t('onChanged'), { editor, transaction })
+    useLogger('onChangedTransaction', t('onChangedTransaction'), {
+      editor,
+      transaction,
+    })
   },
   onChangedMenu(currentMenu) {
     useLogger(

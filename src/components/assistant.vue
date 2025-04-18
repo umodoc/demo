@@ -60,6 +60,10 @@ const emits = defineEmits(['close'])
 const formRef = ref()
 const aiTypes = [
   {
+    label: 'DeepSeek',
+    value: 'https://api.deepseek.com',
+  },
+  {
     label: 'OpenAI',
     value: 'https://api.openai.com/v1',
   },

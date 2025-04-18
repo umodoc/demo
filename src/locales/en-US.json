@@ -16,7 +16,7 @@
   "onCreated": "Editor has been created.",
   "onChanged": "Editor content has been updated.",
   "onChangedSelection": "Selected content has changed.",
-  "onChangedTransaction": "Editor state has changed.",
+  "onChangedTransaction": "Editor transaction has changed.",
   "onChangedMenu": "Menu status has changed.",
   "onChangedToolbar": "Toolbar information has changed.",
   "onChangedPageSize": "Page size information has changed.",
@@ -44,8 +44,7 @@
       "mode": "Default Toolbar",
       "ribbon": "Ribbon",
       "classic": "Classic",
-      "importWord": "Import Word Function",
-      "enableSourceEditor": "Source Code Editor"
+      "importWord": "Import Word Function"
     },
     "page": {
       "name": "Page",
@@ -116,6 +115,8 @@
     "setDocumentAlert": "This example sets the document title to: {content}",
     "setContent": "Set Document Content",
     "setContentText": "This is the content updated after calling the <code>setContent(...)</code> method",
+    "insertContent": "Insert Document Content",
+    "insertContentText": "This is the content inserted after calling the <code>insertContent(...)</code> method",
     "getPage": "Get Page Configuration",
     "getContent": "Get Document Content",
     "getContentExcerpt": "Get Document Excerpt",
@@ -125,6 +126,7 @@
     "getEditor": "Get Editor Vue Instance",
     "useEditor": "Get Editor Instance",
     "getTableOfContents": "Get Table of Contents",
+    "getAllBookmarks": "Get All Bookmarks",
     "getSelectionText": "Get selected text",
     "getSelectionNode": "Get selected node",
     "setCurrentNodeSelection": "Select the current node",

@@ -1,11 +1,11 @@
 {
   "name": "editor-demo",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "description": "Umo Editor Playground. Umo Editor 在线示例",
   "type": "module",
   "author": {
     "name": "umodoc",
-    "email": "contact@umoteam.com",
+    "email": "contact@umodoc.com",
     "url": "https://www.umodoc.com"
   },
   "homepage": "https://demo.umodoc.com/editor",
@@ -18,7 +18,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@umoteam/editor": "^5.0.0",
+    "@umoteam/editor": "6.0.0",
     "@vueuse/core": "^10.9.0",
     "openai": "^4.54.0",
     "tdesign-vue-next": "^1.9.8",
