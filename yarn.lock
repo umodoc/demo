@@ -951,13 +951,17 @@
   resolved "https://registry.yarnpkg.com/@types/web-bluetooth/-/web-bluetooth-0.0.20.tgz#f066abfcd1cbe66267cdbbf0de010d8a41b41597"
   integrity sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==
 
-"@umoteam/editor-external@5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@umoteam/editor-external/-/editor-external-5.0.0.tgz#7d58bec634ae2b62f493f87a83316fc29ef5aaea"
-  integrity sha512-13C812txpIvAq+UfQE1zjFDnkEnPEewtXQG/HJ2IBmXGP82glP8iWvRGJa3/yE0g62dMMaNfiDuqstDv5IhFgA==
+"@umoteam/editor-external@6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@umoteam/editor-external/-/editor-external-6.0.1.tgz#aee5ae9c597dc31b5b49b2d86abee22ce0d41368"
+  integrity sha512-yS/pr+aujxY/nSfqplvoeVlyQSdkz3xHCyjIvrGCH93Zj62elKqNvC2Kb8aXzdkHAkWTGXaeLq/SEmXf1G5OZg==
+  dependencies:
+    "@umoteam/editor" latest
 
-"@umoteam/editor@file:../vue3":
-  version "5.0.0"
+"@umoteam/editor@6.0.1", "@umoteam/editor@latest":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@umoteam/editor/-/editor-6.0.1.tgz#d70b82ba16ecee633e40a5ced968b16e6f54db15"
+  integrity sha512-fRVQvFT0jFdxOukM2euBH507fRGc9KtCY2ZL0r7fcc4uGHXqgBqXdgYjdzcqAKggo7YJu920+ONNpiMLXKQfMw==
   dependencies:
     "@eslint/object-schema" "^2.1.4"
     "@imgly/background-removal" "1.5.5"
@@ -1001,7 +1005,7 @@
     "@tiptap/vue-3" "2.11.5"
     "@tool-belt/type-predicates" "^1.3.0"
     "@types/svg64" "^1.1.2"
-    "@umoteam/editor-external" "5.0.0"
+    "@umoteam/editor-external" "6.0.1"
     "@vueuse/core" "^11.0.3"
     buffer-image-size "^0.6.4"
     dom-to-image-more "^3.4.3"

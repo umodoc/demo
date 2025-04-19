@@ -18,7 +18,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@umoteam/editor": "6.0.0",
+    "@umoteam/editor": "6.0.1",
     "@vueuse/core": "^10.9.0",
     "openai": "^4.54.0",
     "tdesign-vue-next": "^1.9.8",

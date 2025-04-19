@@ -407,14 +407,14 @@ const initEventsAndMethodsPane = (tab) => {
     editorRef.setContent(t('ems.setContentText'))
   })
 
-  // 插入文档内容
-  const insertContentButton = events.addButton({
-    title: t('ems.insertContent'),
-    label: 'insertContent',
-  })
-  insertContentButton.on('click', () => {
-    editorRef.insertContent(t('ems.insertContentText'))
-  })
+  // // 插入文档内容
+  // const insertContentButton = events.addButton({
+  //   title: t('ems.insertContent'),
+  //   label: 'insertContent',
+  // })
+  // insertContentButton.on('click', () => {
+  //   editorRef.insertContent(t('ems.insertContentText'))
+  // })
 
   // 获取文档内容
   const getContentButton = events.addButton({
