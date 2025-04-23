@@ -1,6 +1,6 @@
 {
   "name": "umo-editor-demo",
-  "version": "6.1.0",
+  "version": "6.1.1",
   "description": "Umo Editor Playground. Umo Editor 在线示例",
   "type": "module",
   "author": {
@@ -26,7 +26,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@umoteam/editor": "6.1.0",
+    "@umoteam/editor": "6.1.1",
     "@vueuse/core": "^10.9.0",
     "openai": "^4.54.0",
     "tdesign-vue-next": "^1.9.8",

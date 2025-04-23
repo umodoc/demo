@@ -120,6 +120,22 @@ const initOptionsPane = (tab) => {
       })
     })
 
+  page.addBinding(options.page, 'showBreakMarks', {
+    label: t('options.page.showBreakMarks'),
+  })
+
+  page.addBinding(options.page, 'showBookmark', {
+    label: t('options.page.showBookmark'),
+  })
+
+  page.addBinding(options.page, 'showLineNumber', {
+    label: t('options.page.showLineNumber'),
+  })
+
+  page.addBinding(options.page, 'showToc', {
+    label: t('options.page.showToc'),
+  })
+
   // 水印设置
   const watermark = params.addFolder({
     title: t('options.watermark.name'),
@@ -245,6 +261,7 @@ const initOptionsPane = (tab) => {
     const data = Object.assign({}, options)
     data.document.content = ''
     data.templates = []
+    delete data.webPages
     const json = JSON.stringify(data, null, 2)
     const blob = new Blob([json], { type: 'application/json' })
     const url = URL.createObjectURL(blob)

@@ -52,7 +52,11 @@
       "defaultOrientation": "Page Orientation",
       "portrait": "Portrait",
       "landscape": "Landscape",
-      "defaultBackground": "Background"
+      "defaultBackground": "Background",
+      "showBreakMarks": "Show Line Breaks",
+      "showBookmark": "Show Bookmarks",
+      "showLineNumber": "Show Line Numbers",
+      "showToc": "Show Table of Contents"
     },
     "watermark": {
       "name": "Watermark",

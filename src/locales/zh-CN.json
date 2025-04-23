@@ -52,7 +52,11 @@
       "defaultOrientation": "默认纸张方向",
       "portrait": "纵向",
       "landscape": "横向",
-      "defaultBackground": "默认背景"
+      "defaultBackground": "默认背景",
+      "showBreakMarks": "显示换行符",
+      "showBookmark": "显示书签",
+      "showLineNumber": "显示行号",
+      "showToc": "显示大纲"
     },
     "watermark": {
       "name": "页面水印设置",
