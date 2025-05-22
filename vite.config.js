@@ -37,4 +37,21 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  build: {
+    rollupOptions: {
+      external: [
+        'onnxruntime-web',
+        '@imgly/background-removal',
+        'lib0/hash/sha256'
+      ]
+    },
+    chunkSizeWarningLimit: 2000
+  },
+  optimizeDeps: {
+    exclude: [
+      'onnxruntime-web',
+      '@imgly/background-removal',
+      'lib0'
+    ]
+  }
 })

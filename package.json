@@ -19,8 +19,8 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": "vite --port 9001 --open --force",
-    "build": "vite build",
+    "dev": "NODE_OPTIONS='--max-old-space-size=4096' vite --port 9001 --open --force",
+    "build": "NODE_OPTIONS='--max-old-space-size=4096' vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
