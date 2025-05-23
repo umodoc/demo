@@ -36,6 +36,12 @@
           huge
           @menu-click="openButtonMenuButton"
         />
+        <umo-menu-button
+          class="menu-button-export-docx"
+          text="Export to DOCX" 
+          huge
+          @menu-click="exportToDocx"
+        />
       </template>
       <template #bubble_menu>
         <umo-menu-button
@@ -67,6 +73,8 @@
 <script setup>
 import { UmoMenuButton } from '@umoteam/editor'
 import OpenAI from 'openai'
+import HTMLtoDOCX from 'html-to-docx'
+import { saveAs } from 'file-saver'
 import { t, locale } from '@/composables/i18n'
 import getOptions from '@/configs/options'
 import events from '@/configs/events'
@@ -243,6 +251,44 @@ const openButtonMenuButton = () => {
     },
   })
 }
+
+// Placeholder for DOCX export functionality
+const exportToDocx = async () => {
+  if (editorRef.value) {
+    try {
+      const htmlContent = editorRef.value.getHTML();
+      // Add a basic HTML structure if the content is just a fragment
+      const fullHtml = `<!DOCTYPE html><html><head><meta charset="utf-8"></head><body>${htmlContent}</body></html>`;
+      const fileBuffer = await HTMLtoDOCX(fullHtml);
+      saveAs(fileBuffer, 'document.docx');
+      console.log('Document exported to DOCX successfully.');
+    } catch (error) {
+      console.error('Error exporting to DOCX:', error);
+      // Optionally, show an error message to the user
+      editorRef.value.useAlert({
+        theme: 'danger',
+        header: t('notification'),
+        body: t('exportError') || 'Error exporting document. Please try again.', // Assuming 'exportError' key exists in i18n
+        confirmBtn: locale.value === 'zh-CN' ? '确定' : 'Ok',
+        onConfirm(dialog) {
+          dialog.destroy()
+        },
+      })
+    }
+  } else {
+    console.error('Editor instance not available.');
+     // Optionally, show an error message to the user
+    const dialog = editorRef.value.useAlert({ // This might fail if editorRef is null
+        theme: 'danger',
+        header: t('notification'),
+        body: 'Editor not ready. Please wait and try again.',
+        confirmBtn: locale.value === 'zh-CN' ? '确定' : 'Ok',
+        onConfirm(dialog) {
+          dialog.destroy()
+        },
+      })
+  }
+};
 </script>
 
 <style lang="less" scoped>
