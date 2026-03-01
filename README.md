@@ -14,6 +14,12 @@ As an independent Vue3 plugin, Umo Editor can be easily integrated into various 
 
 This project is a simple demo of Umo Editor, showing how to use Umo Editor in a Vue 3 project.
 
+You can also preview and run it online with StackBlitz, CodeSandbox, or Github Pages:
+
+- View and run on [StackBlitz](https://stackblitz.com/~/github.com/umodoc/demo?file=src/app.vue)
+- View and run on [CodeSandbox](https://codesandbox.io/p/github/umodoc/demo/main?import=true)
+- View and run on [Github Pages](https://umodoc.github.io/demo/)
+
 ### Install Dependencies
 
 ```bash

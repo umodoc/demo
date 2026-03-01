@@ -15,6 +15,12 @@ Umo Editor 最大的特点是代码完全开源且自主可控，支持私有部
 
 本项目是 Umo Editor 的一个简单示例，展示了如何在 Vue3 项目中使用 Umo Editor。
 
+您也可以在 StackBlitz、CodeSandbox 和 Github Pages 上快速查看和运行本项目。
+
+- 在 [StackBlitz](https://stackblitz.com/~/github.com/umodoc/demo?file=src/app.vue) 上查看和运行本项目。
+- 在 [CodeSandbox](https://codesandbox.io/p/github/umodoc/demo/main?import=true) 上查看和运行本项目。
+- 在 [Github Pages](https://umodoc.github.io/demo/) 上查看和运行本项目。
+
 ### 安装依赖
 
 ```bash
