@@ -1,11 +1,6 @@
 <template>
   <div class="examples">
-    <div class="box">
-      <umo-editor ref="editorRef" v-bind="options"></umo-editor>
-    </div>
-    <!-- <div class="box">
-      <umo-editor editor-key="testaaa" :toolbar="{ defaultMode: 'classic' }" />
-    </div> -->
+    <umo-editor ref="editorRef" v-bind="options" />
   </div>
 </template>
 
@@ -155,23 +150,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-}
-.examples {
-  margin: 20px;
-  display: flex;
-  height: calc(100vh - 40px);
-}
-.box {
-  border: solid 1px #ddd;
-  box-sizing: border-box;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-html,
-body {
   height: 100vh;
   overflow: hidden;
+}
+.examples {
+  display: flex;
+  height: 100vh;
 }
 </style>
